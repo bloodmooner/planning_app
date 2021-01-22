@@ -1,0 +1,16 @@
+.title {
+    font-family: 'Quicksand', sans-serif;
+    color: #3d4f9f;
+    font-weight: 300;
+    span {
+        font-weight: 500;
+    }
+    &_fz36 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    &_fz48 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}

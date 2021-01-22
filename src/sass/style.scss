@@ -1,0 +1,36 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap');
+
+@import 'blocks/title';
+@import 'blocks/buttons';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+header, section, footer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+section, footer {
+    border-top: 1px solid #d8e3fe;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/partners';
+@import 'blocks/manage';
+@import 'blocks/about';
+@import 'blocks/stats';
+@import 'blocks/resources';
+@import 'blocks/quotes';
+@import 'blocks/help';
+@import 'blocks/getstarted';
+@import 'blocks/signup';
+@import 'blocks/footer';

@@ -1,0 +1,71 @@
+.about {
+    min-height: 885px;
+    background-color: #fff;
+    &__bg {
+        width: 1200px;
+        margin: 0 auto;
+        height: 545px;
+        background: url('../../img/clouds_bg.png') no-repeat 50%/cover;
+    }
+    &__wrapper {
+        width: 765px;
+        margin: 95px auto 0px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 140px);
+        justify-content: space-between;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 10px;
+        color: #3d4f9f;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 170px;
+    }
+    &__title {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+    &__img {
+        width: 69px;
+        margin: 0 auto;
+    }
+    &__name {
+        margin-top: 33px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        line-height: 25px;
+        color: #4074f8;
+    }
+    &__descr {
+        font-family: 'Open Sans', sans-serif;
+        margin: 25px auto 0px auto;
+        width: 140px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 20px;
+        text-align: center;
+        color: #adb3cb;
+    }
+    &__btns {
+        width: 340px;
+        margin: 150px auto 0px auto;
+        display: grid;
+        grid-template-columns: 113px 111px 113px;
+        grid-template-rows: 43px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__divider {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 20px;
+        text-align: center;
+        color: #adb3cb;
+    }
+}

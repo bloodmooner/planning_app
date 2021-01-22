@@ -1,0 +1,11 @@
+.partners {
+    &__wrapper {
+        width: 890px;
+        margin: 60px auto 60px auto;
+        display: grid;
+        grid-template-columns: repeat(5, 116px);
+        justify-content: space-between;
+        grid-template-rows: 29px;
+        align-items: center;
+    }
+}

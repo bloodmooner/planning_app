@@ -1,0 +1,45 @@
+.btn {
+    background-color: #d2e1ff;
+    border: none;
+    border-radius: 2px;
+    width: 113px;
+    height: 43px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #3a79ff;
+    &-active {
+        width: 130px;
+        height: 43px;
+        background-color: #4c85ff;
+        color: #ffffff;
+    }
+    &-passive {
+        font-weight: 500;
+        color: #adb4d2;
+        font-size: 13px;
+        background-color: transparent;
+        border: 1px solid #d1d1e4;
+        width: 130px;
+        height: 43px;
+    }
+    &-negative {
+        background-color: #ffd7d7;
+        font-weight: 700;
+        color: #d43f3f;
+    }
+    &-transperent {
+        width: 211px;
+        background-color: #fff;
+        color: #a6b6da;
+    }
+    &-white {
+        width: 130px;
+        height: 43px;
+        background-color: #ffffff;
+        color: #565f82;
+        font-weight: 700;
+        font-size: 13px;
+    }
+}
