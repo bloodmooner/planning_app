@@ -3,6 +3,9 @@
         display: grid;
         grid-template-columns: repeat(2, 720px);
         grid-template-rows: 343px;
+        @include for-desktop-up {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     &__left {
         background-color: #6888ff;
