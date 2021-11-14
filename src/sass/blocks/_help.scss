@@ -47,4 +47,10 @@
             color: #495274;
         }
     }
+    @include for-tablet-landscape-up {
+        padding-bottom: 45px;
+    }
+    @include for-tablet-portrait-up {
+        padding-bottom: 45px;
+    }
 }

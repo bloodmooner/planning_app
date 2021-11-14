@@ -22,6 +22,14 @@
             margin: 0 auto; 
             position: relative;
         }
+        @include for-tablet-landscape-up {
+            grid-template-columns: 1fr 2fr;
+            column-gap: 60px;
+            width: 800px;
+            left: 0px;
+            margin: 0 auto; 
+            position: relative;
+        }
     }
     &__caption {
         padding-top: 60px;
@@ -81,6 +89,12 @@
             }
         }
         @include for-desktop-up {
+            display: none;
+        }
+        @include for-tablet-landscape-up {
+            display: none;
+        }
+        @include for-tablet-portrait-up {
             display: none;
         }
     }

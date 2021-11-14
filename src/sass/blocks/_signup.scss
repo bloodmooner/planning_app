@@ -8,6 +8,16 @@
         grid-template-rows: 95px;
         justify-content: space-between;
         align-items: center;
+        @include for-tablet-landscape-up {
+            width: 100%;
+            grid-template-columns: repeat(2 ,1fr);
+            column-gap: 30px;
+        }
+        @include for-tablet-portrait-up {
+            width: 100%;
+            grid-template-columns: repeat(2 ,1fr);
+            column-gap: 30px;
+        }
     }
     &__header {
         font-family: 'Quicksand', sans-serif;
@@ -40,6 +50,14 @@
             font-size: 13px;
             line-height: 16px;
             color: #7a85ad;
+            @include for-tablet-landscape-up {
+                width: 250px;
+                margin-right: 10px;
+            }
+            @include for-tablet-portrait-up {
+                width: 250px;
+                margin-right: 10px;
+            }
         }
     }
     &__btn {
@@ -52,5 +70,11 @@
         font-size: 13px;
         line-height: 16px;
         color: #ffffff;
+    }
+    @include for-tablet-landscape-up {
+        padding: 90px 0;
+    }
+    @include for-tablet-portrait-up {
+        padding: 90px 0;
     }
 }

@@ -8,6 +8,12 @@
         color: #ffffff;
         text-align: center;
         text-transform: uppercase;
+        @include for-tablet-landscape-up {
+            font-size: 15px;
+        }
+        @include for-tablet-portrait-up {
+            font-size: 15px;
+        }
     }
     &__title {
         margin-top: 15px;

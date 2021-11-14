@@ -7,5 +7,9 @@
         justify-content: space-between;
         grid-template-rows: 29px;
         align-items: center;
+        @include for-tablet-landscape-up {
+            grid-template-columns: repeat(5, 1fr);
+            width: 100%;
+        }
     }
 }

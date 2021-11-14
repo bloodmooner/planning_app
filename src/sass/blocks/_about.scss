@@ -9,6 +9,12 @@
         @include for-desktop-up {
             width: 100%;
         }
+        @include for-tablet-landscape-up {
+            width: 100%;
+        }
+        @include for-tablet-portrait-up {
+            width: 100%;
+        }
     }
     &__wrapper {
         width: 765px;
@@ -16,6 +22,16 @@
         display: grid;
         grid-template-columns: repeat(4, 140px);
         justify-content: space-between;
+        @include for-tablet-landscape-up {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 60px auto 0px auto;
+            row-gap: 30px;
+        }
+        @include for-tablet-portrait-up {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 60px auto 0px auto;
+            row-gap: 30px;
+        }
     }
     &__subtitle {
         font-weight: 500;
@@ -24,6 +40,14 @@
         text-transform: uppercase;
         text-align: center;
         margin-top: 170px;
+        @include for-tablet-landscape-up {
+            margin-top: 45px;
+            font-size: 15px;
+        }
+        @include for-tablet-portrait-up {
+            margin-top: 45px;
+            font-size: 15px;
+        }
     }
     &__title {
         margin-top: 20px;
@@ -63,6 +87,12 @@
         grid-template-rows: 43px;
         justify-content: space-between;
         align-items: center;
+        @include for-tablet-landscape-up {
+            margin: 60px auto 0px auto;
+        }
+        @include for-tablet-portrait-up {
+            margin: 60px auto 0px auto;
+        }
     }
     &__divider {
         font-weight: 600;
@@ -70,5 +100,12 @@
         line-height: 20px;
         text-align: center;
         color: #adb3cb;
+    }
+    @include for-tablet-landscape-up {
+        min-height: 770px;
+    }
+    @include for-tablet-portrait-up {
+        min-height: auto;
+        padding-bottom: 45px;
     }
 }
