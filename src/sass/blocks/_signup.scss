@@ -42,6 +42,10 @@
         form {
             display: flex;
             justify-content: space-between;
+            @include for-phone-only {
+                flex-direction: column;
+                width: 100%;
+            }
         }
         input {
             width: 280px;
@@ -63,6 +67,11 @@
                 width: 250px;
                 margin-right: 10px;
             }
+            @include for-phone-only {
+                width: 100%;
+                margin-bottom: 10px;
+
+            }
         }
     }
     &__btn {
@@ -75,6 +84,9 @@
         font-size: 13px;
         line-height: 16px;
         color: #ffffff;
+        @include for-phone-only {
+            width: 100%;
+        }
     }
     @include for-tablet-landscape-up {
         padding: 90px 0;

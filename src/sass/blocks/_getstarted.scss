@@ -46,4 +46,7 @@
     &__btn {
         width: 155px;
     }   
+    @include for-phone-only {
+        
+    }
 }

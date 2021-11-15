@@ -21,6 +21,9 @@
         display: grid;
         grid-template-columns: 14px 500px;
         column-gap: 25px;
+        @include for-phone-only {
+            grid-template-columns: 0.25fr 1fr;
+        }
     }
     &__body {
         padding: 15px 0px 25px 0px;

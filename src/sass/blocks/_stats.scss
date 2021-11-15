@@ -13,6 +13,10 @@
             grid-template-columns: 1fr;
             grid-auto-rows: 345px;
         }
+        @include for-phone-only {
+            grid-template-columns: 1fr;
+            grid-auto-rows: 345px;
+        }
     }
     &__left {
         background-color: #6888ff;
@@ -28,9 +32,15 @@
         padding-top: 65px;
         &-left {
             right: 90px;
+            @include for-phone-only {
+                right: 30px;
+            }
         }
         &-right {
             left: 90px;
+            @include for-phone-only {
+                left: 30px;
+            }
         }
     }
     &__percent {

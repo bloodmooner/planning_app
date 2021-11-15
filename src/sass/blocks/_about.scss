@@ -15,6 +15,9 @@
         @include for-tablet-portrait-up {
             width: 100%;
         }
+        @include for-phone-only {
+            width: 100%;
+        }
     }
     &__wrapper {
         width: 765px;
@@ -34,7 +37,7 @@
             width: 100%;
         }
         @include for-phone-only {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             margin: 60px auto 0px auto;
             row-gap: 30px;
             width: 100%;
@@ -53,6 +56,10 @@
         }
         @include for-tablet-portrait-up {
             margin-top: 45px;
+            font-size: 15px;
+        }
+        @include for-phone-only {
+            margin-top: 30px;
             font-size: 15px;
         }
     }
@@ -100,6 +107,22 @@
         @include for-tablet-portrait-up {
             margin: 60px auto 0px auto;
         }
+        @include for-phone-only {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 60px auto 0px auto;
+        }
+    }
+    &__btn {
+        &-first {
+            display: block;
+            margin-bottom: 20px;
+        }
+        &-second {
+            display: block;
+            margin-top: 20px;
+        }
     }
     &__divider {
         font-weight: 600;
@@ -116,7 +139,7 @@
         padding-bottom: 45px;
     }
     @include for-phone-only {
-        min-height: 775px;
+        min-height: 1350px;
         padding-bottom: 45px;
     }
 }

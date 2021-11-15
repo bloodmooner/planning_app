@@ -38,6 +38,14 @@
             margin: 0 auto; 
             position: relative;
         }
+        @include for-phone-only {
+            grid-template-columns: 1fr 2fr;
+            column-gap: 60px;
+            width: 290px;
+            left: 0px;
+            margin: 0 auto; 
+            position: relative;
+        }
     }
     &__caption {
         padding-top: 60px;
@@ -103,6 +111,9 @@
             display: none;
         }
         @include for-tablet-portrait-up {
+            display: none;
+        }
+        @include for-phone-only {
             display: none;
         }
     }

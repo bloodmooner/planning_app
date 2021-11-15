@@ -20,6 +20,12 @@
             grid-template-rows: auto;
             width: 100%;
         }
+        @include for-phone-only {
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            width: 100%;
+        }
     }
     &__subtitle {
         margin-top: 70px;

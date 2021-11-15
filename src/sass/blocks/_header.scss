@@ -19,6 +19,7 @@
         }
         @include for-phone-only {
             width: 100%;
+            grid-template-columns: 1fr;
         }
     }
     &__logo {
