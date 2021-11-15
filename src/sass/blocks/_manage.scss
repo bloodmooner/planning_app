@@ -52,6 +52,12 @@
         width: 655px;
         img {
             width: 100%;
+            @include for-tablet-portrait-up {
+                width: 60%;
+            }
+            @include for-phone-only {
+                width: 60%;
+            }
         }
         @include for-tablet-landscape-up {
             position: relative;
@@ -60,6 +66,10 @@
         @include for-tablet-portrait-up {
             position: relative;
             left: 30px;
+            width: 100%;
+        }
+        @include for-phone-only {
+            width: 100%;
         }
     }
 }

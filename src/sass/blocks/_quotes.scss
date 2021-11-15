@@ -30,6 +30,14 @@
             margin: 0 auto; 
             position: relative;
         }
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr 2fr;
+            column-gap: 60px;
+            width: 500px;
+            left: 0px;
+            margin: 0 auto; 
+            position: relative;
+        }
     }
     &__caption {
         padding-top: 60px;

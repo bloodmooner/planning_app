@@ -3,6 +3,14 @@
     &__wrapper {
         width: 745px;
         margin: 0 auto;
+        @include for-tablet-portrait-up {
+            width: 100%;
+            
+        }
+        @include for-phone-only {
+            width: 100%;
+            
+        }
     }
     &__item {
         padding-bottom: 15px;
@@ -21,6 +29,14 @@
         display: grid;
         grid-template-columns: 391px 195px;
         justify-content: space-between;
+        @include for-tablet-portrait-up {
+            width: 100%;
+            grid-template-columns: 1fr;
+        }
+        @include for-phone-only {
+            width: 100%;
+            grid-template-columns: 1fr;
+        }
     }
     &__text{
         font-weight: 400;
@@ -36,6 +52,12 @@
         font-weight: 500;
         font-size: 13px;
         color: #7382a3;
+        @include for-tablet-portrait-up {
+            margin-top: 20px;
+        }
+        @include for-phone-only {
+            margin-top: 20px;
+        }
     }
     &__name {
         font-weight: 500;
