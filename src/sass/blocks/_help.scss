@@ -78,4 +78,7 @@
     @include for-tablet-portrait-up {
         padding-bottom: 45px;
     }
+    @include for-phone-only {
+        padding-bottom: 30px;       
+    }
 }

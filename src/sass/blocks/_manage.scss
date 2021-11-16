@@ -40,6 +40,10 @@
         @include for-tablet-portrait-up {
             font-size: 15px;
         }
+        @include for-phone-only {
+            font-size: 15px;
+            margin-top: 30px;
+        }
     }
     &__title {
         margin-top: 30px;
@@ -62,7 +66,7 @@
                 width: 60%;
             }
             @include for-phone-only {
-                width: 60%;
+                width: 100%;
             }
         }
         @include for-tablet-landscape-up {
@@ -76,6 +80,11 @@
         }
         @include for-phone-only {
             width: 100%;
+            margin-top: 30px;
         }
+    }
+    @include for-phone-only {
+        min-height: auto;
+        padding-bottom: 30px;
     }
 }
