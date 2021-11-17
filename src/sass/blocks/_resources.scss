@@ -202,11 +202,11 @@
         margin-top: 104px;
         @include for-tablet-landscape-up {
             margin-top: 45px;
-            font-size: 15px;
+            font-size: 18px;
         }
         @include for-tablet-portrait-up {
             margin-top: 45px;
-            font-size: 15px;
+            font-size: 18px;
         }
         @include for-phone-only {
             margin-top: 30px;
@@ -226,7 +226,7 @@
     }
     @include for-tablet-portrait-up {
         min-height: auto;
-        padding-bottom: 30px;
+        padding-bottom: 45px;
     }
     @include for-phone-only {
         min-height: auto;

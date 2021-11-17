@@ -35,10 +35,12 @@
         color: #3d4f9f;
         text-transform: uppercase;
         @include for-tablet-landscape-up {
-            font-size: 15px;
+            font-size: 18px;
+            margin-top: 45px;
         }
         @include for-tablet-portrait-up {
-            font-size: 15px;
+            font-size: 18px;
+            margin-top: 45px;
         }
         @include for-phone-only {
             font-size: 15px;
@@ -54,6 +56,12 @@
         font-size: 15px;
         line-height: 28px;
         color: #8d96bd;
+        @include for-tablet-landscape-up {
+            font-size: 18px;
+        }
+        @include for-tablet-portrait-up {
+            font-size: 18px;
+        }
     }
     &__btns {
         margin-top: 50px;
@@ -63,7 +71,7 @@
         img {
             width: 100%;
             @include for-tablet-portrait-up {
-                width: 60%;
+                width: 100%;
             }
             @include for-phone-only {
                 width: 100%;
@@ -75,13 +83,21 @@
         }
         @include for-tablet-portrait-up {
             position: relative;
-            left: 30px;
             width: 100%;
+            margin-top: 45px;
         }
         @include for-phone-only {
             width: 100%;
             margin-top: 30px;
         }
+    }
+    @include for-tablet-landscape-up {
+        min-height: auto;
+        padding-bottom: 45px;
+    }
+    @include for-tablet-portrait-up {
+        min-height: auto;
+        padding-bottom: 45px;
     }
     @include for-phone-only {
         min-height: auto;

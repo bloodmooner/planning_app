@@ -23,20 +23,22 @@
             position: relative;
         }
         @include for-tablet-landscape-up {
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr;
             column-gap: 60px;
             width: 800px;
             left: 0px;
             margin: 0 auto; 
             position: relative;
+            top: 0;
         }
         @include for-tablet-portrait-up {
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr;
             column-gap: 60px;
             width: 500px;
             left: 0px;
             margin: 0 auto; 
             position: relative;
+            top: 0;
         }
         @include for-phone-only {
             grid-template-columns: 1fr;
@@ -50,6 +52,12 @@
     }
     &__caption {
         padding-top: 60px;
+        @include for-tablet-landscape-up {
+            padding-top: 0;
+        }
+        @include for-tablet-portrait-up {
+            padding-top: 0;
+        }
         @include for-phone-only {
             padding-top: 0;
         }
@@ -59,6 +67,14 @@
         font-size: 10px;
         color: #3d4f9f;
         text-transform: uppercase;
+        @include for-tablet-landscape-up {
+            font-size: 18px;
+            text-align: center;
+        }
+        @include for-tablet-portrait-up {
+            font-size: 18px;
+            text-align: center;
+        }
         @include for-phone-only {
             font-size: 15px;
             text-align: center;
@@ -67,6 +83,14 @@
     &__title {
         margin-top: 31px;
         font-weight: 500;
+        @include for-tablet-landscape-up {
+            
+            text-align: center;
+        }
+        @include for-tablet-portrait-up {
+            
+            text-align: center;
+        }
         @include for-phone-only {
             text-align: center;
         }
@@ -78,6 +102,14 @@
         line-height: 22px;
         color: #a4abc8;
         font-family: 'Open Sans', sans-serif;
+        @include for-tablet-landscape-up {
+            font-size: 17px;
+            text-align: center;
+        }
+        @include for-tablet-portrait-up {
+            font-size: 17px;
+            text-align: center;
+        }
         @include for-phone-only {
             text-align: center;   
         }
@@ -147,6 +179,14 @@
         &-active {
             background-color: #5283ff;
         }
+    }
+    @include for-tablet-landscape-up {
+        min-height: auto;
+        padding: 45px 0;       
+    }
+    @include for-tablet-portrait-up {
+        min-height: auto;
+        padding: 45px 0;       
     }
     @include for-phone-only {
         min-height: auto;

@@ -52,11 +52,11 @@
         margin-top: 170px;
         @include for-tablet-landscape-up {
             margin-top: 45px;
-            font-size: 15px;
+            font-size: 18px;
         }
         @include for-tablet-portrait-up {
             margin-top: 45px;
-            font-size: 15px;
+            font-size: 18px;
         }
         @include for-phone-only {
             margin-top: 30px;
@@ -116,12 +116,16 @@
     }
     &__btn {
         &-first {
-            display: block;
-            margin-bottom: 20px;
+            @include for-phone-only {
+                display: block;
+                margin-bottom: 20px;
+            }
         }
         &-second {
-            display: block;
-            margin-top: 20px;
+            @include for-phone-only {
+                display: block;
+                margin-top: 20px;
+            }
         }
     }
     &__divider {
