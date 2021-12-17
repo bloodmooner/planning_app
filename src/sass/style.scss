@@ -1,5 +1,8 @@
 @import 'libs/bootstrap-reboot.min';
+@import 'libs/slick.scss';
+
 @import 'base/mixins';
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap');
 
 @import 'blocks/title';
@@ -14,6 +17,7 @@
 .container {
     width: 1440px;
     margin: 0 auto;
+    position: relative;
     @include for-desktop-up {
         width: 1100px;
     }
@@ -28,11 +32,20 @@
     }
 }
 header, section, footer {
-    max-width: 1440px;
     margin: 0 auto;
 }
 section, footer {
     border-top: 1px solid #d8e3fe;
+}
+
+body, html {
+    position: relative;
+    overflow-x: hidden;
+}
+
+button:active, 
+button:focus {
+    outline: none;
 }
 
 @import 'blocks/header';

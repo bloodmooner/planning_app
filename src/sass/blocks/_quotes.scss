@@ -3,11 +3,13 @@
     position: relative;
     background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
     padding-bottom: 175px;
+    overflow-x: hidden;
     &__wrapper {
         position: absolute;
-        left: 70px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 100px;
-        width: 1375px;
+        width: 1320px;
         display: grid;
         grid-template-columns: 335px 830px;
         grid-template-rows: 261px;
@@ -15,37 +17,44 @@
         justify-content: space-between;
         align-items: center;
         @include for-desktop-up {
-            grid-template-columns: 1fr 2fr;
-            column-gap: 60px;
-            width: 1100px;
-            left: 0px;
-            margin: 0 auto; 
-            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100px;
+            width: 1120px;
+            display: grid;
+            grid-template-columns: 335px 720px;
+            grid-template-rows: 261px;
+            align-items: center;
+            justify-content: space-between;
+            align-items: center;
         }
         @include for-tablet-landscape-up {
             grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
             column-gap: 60px;
             width: 800px;
-            left: 0px;
-            margin: 0 auto; 
+            left: 50%;
+            margin-left: 0;
             position: relative;
             top: 0;
         }
         @include for-tablet-portrait-up {
             grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
             column-gap: 60px;
             width: 500px;
-            left: 0px;
-            margin: 0 auto; 
+            left: 50%;
+            margin-left: 0;
             position: relative;
             top: 0;
         }
         @include for-phone-only {
             grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
             column-gap: 60px;
             width: 290px;
-            left: 0px;
-            margin: 0 auto; 
+            left: 50%;
+            margin-left: 0;
             position: relative;
             top: 0;
         }
@@ -54,12 +63,15 @@
         padding-top: 60px;
         @include for-tablet-landscape-up {
             padding-top: 0;
+            width: 800px;
         }
         @include for-tablet-portrait-up {
             padding-top: 0;
+            width: 500px;
         }
         @include for-phone-only {
             padding-top: 0;
+            width: 290px;
         }
     }
     &__subtitle {
@@ -118,6 +130,24 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        height: 210px;
+        margin-top: 30px;
+        &-wrapper .slick-list {
+            margin: 0 -27px;
+            height: 100%;
+            @include for-tablet-landscape-up {
+                margin: 0 -27px;
+            }
+        }
+        &-wrapper .slick-list .slick-track .slick-slide {
+            margin: 0 27px;
+            @include for-tablet-portrait-up {
+                width: 500px;
+            }
+            @include for-phone-only {
+                width: 290px;
+            }
+        }
         &-item {
             position: relative;
             padding: 45px 70px;
@@ -125,6 +155,12 @@
             height: 175px;
             background-color: #fff;
             filter: drop-shadow(0px 5px 50px #F3F5FA);
+            @include for-desktop-up {
+                width: 350px;
+            }
+            @include for-phone-only {
+                padding: 10px 20px;
+            }
         }
         &-avatar {
             position: absolute;
@@ -151,25 +187,31 @@
             }
         }
         @include for-desktop-up {
-            display: none;
+            
         }
         @include for-tablet-landscape-up {
-            display: none;
+            margin-left: 27px;
         }
         @include for-tablet-portrait-up {
-            display: none;
+            margin-left: 27px;
         }
         @include for-phone-only {
-            display: none;
+            margin-left: 27px;
+            min-height: 220px;
+            height: 100%;
         }
     }
     &__subwrapper {
         position: absolute;
-        bottom: -100px;
-        left: 125px;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-75%);
         width: 170px;
         display: flex;
         justify-content: space-between;
+        @include for-desktop-up {
+            transform: translateX(-44%);
+        }
     }
     &__dot {
         width: 8px;

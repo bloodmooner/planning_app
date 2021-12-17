@@ -116,12 +116,18 @@
     }
     &__btn {
         &-first {
+            &:hover {
+                background-color: #ffdbdb;
+            }
             @include for-phone-only {
                 display: block;
                 margin-bottom: 20px;
             }
         }
         &-second {
+            &:hover {
+                background-color: #dbe7ff;
+            }
             @include for-phone-only {
                 display: block;
                 margin-top: 20px;

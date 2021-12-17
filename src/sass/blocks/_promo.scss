@@ -1,7 +1,7 @@
 .promo {
     min-height: 570px;
     margin: 0px auto 0px auto;
-    background: url('../../img/main_bg.png') no-repeat 50%/cover;
+    
     &__wrapper {
         width: 585px;
         margin: 0 auto;
@@ -69,6 +69,7 @@
         }
     }
     &__btns {
+        display: block;
         width: 152px;
         height: 152px;
         margin: 0 auto;

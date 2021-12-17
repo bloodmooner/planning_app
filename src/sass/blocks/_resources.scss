@@ -36,26 +36,29 @@
     &__arrow {
         position: absolute;
         top: 50%;
+        cursor: pointer;
         &-left {
-            left: -100px;
+            left: 0px;
             @include for-tablet-landscape-up {
-                left: -65px;
+                left: -25px;
             }
             @include for-tablet-portrait-up {
-                left: -65px;
+                left: -25px;
             }
         }
         &-right {
-            right: -100px;
+            right: 0px;
             @include for-tablet-landscape-up {
-                right: -65px;
+                right: -25px;
             }
             @include for-tablet-portrait-up {
-                right: -65px;
+                right: -25px;
             }
         }
-        @include for-phone-only {
-            display: none;
+        img {
+            @include for-phone-only {
+                display: none;
+            }
         }
     }
     &__gallery {
@@ -191,7 +194,10 @@
         }
     }
     &__bookmark {
-        text-align: left;
+        text-align: center;
+        @include for-phone-only {
+            text-align: left;
+        }
     }
     &__subtitle {
         font-weight: 500;
@@ -220,6 +226,32 @@
         line-height: 30px;
         text-align: center;
     }
+    &__dots {
+        margin: 0 auto 0 auto;
+        @include for-tablet-landscape-up {
+            margin: 30px auto 0px auto;
+        }
+        @include for-tablet-portrait-up {
+            margin: 30px auto 0px auto;
+        }
+        @include for-phone-only {
+            margin: 30px auto 0px auto;
+        }
+    }
+    &__dot {
+        width: 8px;
+        height: 8px;
+        background-color: #d1d6e3;
+        border-radius: 100%;
+        &-active {
+            background-color: #5283ff;
+        }
+    }
+    &__more {
+        &:hover {
+            background-color: #dbe7ff;
+        }
+    }
     @include for-tablet-landscape-up {
         min-height: auto;
         padding-bottom: 45px;
@@ -234,27 +266,29 @@
     }
 }
 
-.slider {
+
+.slick-dots {
     width: 50px;
     display: flex;
     justify-content: space-between;
     margin: 100px auto 0px auto;
-    &__dot {
+    list-style-type: none;
+    @include for-tablet-portrait-up {
+        margin: 0 auto;
+    }
+    @include for-phone-only {
+        margin: 0 auto;
+    }
+    li button {
+        border: none;
+        background-color: transparent;
         width: 8px;
         height: 8px;
         background-color: #d1d6e3;
         border-radius: 100%;
-        &-active {
-            background-color: #5283ff;
-        }
+        font-size: 0;
     }
-    @include for-tablet-landscape-up {
-        margin: 30px auto 0px auto;
-    }
-    @include for-tablet-portrait-up {
-        margin: 30px auto 0px auto;
-    }
-    @include for-phone-only {
-        margin: 30px auto 0px auto;
+    .slick-active button {
+        background-color: #5283ff;
     }
 }

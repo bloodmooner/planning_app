@@ -41,6 +41,14 @@
         }
     }
     &__image {
+        path {
+            fill: #D6DAE5;
+        }
+        &:hover {
+            path {
+                fill: #5982E7;
+            }
+        }
         @include for-tablet-portrait-up {
             display: block;
             margin: 0 auto;
@@ -48,6 +56,11 @@
         @include for-phone-only {
             display: block;
             margin: 0 auto;
+        }
+        &_active {
+            path {
+                fill: #5982E7;
+            }
         }
     }
 }

@@ -2,7 +2,7 @@
     padding-bottom: 175px;
     &__wrapper {
         width: 745px;
-        margin: 0 auto;
+        margin: 70px auto 0 auto;
         @include for-tablet-portrait-up {
             width: 100%;
             
@@ -48,13 +48,19 @@
         color: #8d96bd;
     }
     &__btn {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 195px;
         height: 43px;
         background-color: #e8ecf4;
         font-weight: 500;
         font-size: 13px;
         color: #7382a3;
+        &:hover {
+            background-color: #cdd6e7;
+            text-decoration: none;
+        }
         @include for-tablet-portrait-up {
             margin-top: 20px;
         }
@@ -81,4 +87,45 @@
     @include for-phone-only {
         padding-bottom: 30px;       
     }
+}
+
+
+.ac {
+    border: none;
+}
+
+.ac-header {
+    border-bottom: 1px solid #D8E3FE;
+}
+
+.ac .ac-trigger {
+    padding: 10px 30px 10px 40px;
+    position: relative;
+    font: bold 15px Quicksand, sans-serif;
+    color: #8e96b7;
+}
+
+
+.ac.is-active>.ac-header .ac-trigger {
+    color: #495274;
+}
+
+.ac.is-active>.ac-header .ac-trigger::before {
+    content: url('../../icons/help/arrow_top.svg');
+    position: absolute;
+    left: 0;
+}
+
+.ac .ac-trigger::before {
+    content: url('../../icons/help/arrow_bottom.svg');
+    position: absolute;
+    left: 0;
+}
+
+.ac.is-active>.ac-header .ac-trigger::after {
+    content: '';
+}
+
+.ac .ac-trigger::after {
+    content: '';
 }
